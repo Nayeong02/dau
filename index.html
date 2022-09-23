@@ -12,19 +12,19 @@
 
 <!--header+nav+section>article*3+aside^footer-->
 <body>
-    <header>
+    <header id="home">
     <img src="./images/logo.jpg" />
         <h1>Nayeong Site</h1>
     </header>
     <nav>
-    <!--ul>li*5{메인메뉴$}-->
+    <!--ul>li*5>a{메인메뉴$}-->
     <ul>
-        <li>메인메뉴1</li>
-        <li>메인메뉴2</li>
-        <li>메인메뉴3</li>
-        <li>메인메뉴4</li>
-        <li>메인메뉴5</li>
-    </ul>
+        <li><a href="#">소개</a></li>
+        <li><a href="#">쇼핑몰</a></li>
+        <li><a href="#">패키지</a></li>
+        <li><a href="#">커뮤니티</a></li>
+        <li><a href="./gallery.html">갤러리</a></li>
+    </ul> 
     </nav>
     <section>
         <article>
@@ -68,8 +68,25 @@
         
             </div>
         </article>
-        <article></article>
-        <aside></aside>
+        <article>
+            <div class="gallery">
+                <iframe src="./gallery.html" width="60%" height="300" frameborder="0"></iframe>
+            </div>
+        </article>
+        <aside>
+            <div class="login">
+                <form action="#" method="get">
+                    <input type="text" name="id" id=""><br>
+                    <input type="submit" value="제출">
+                </form>
+            </div>
+            <div class="bookmark"></div>
+            <a href="http://mis.donga.ac.kr" target="_blank"> 경영정보학과</a><br>
+            <a href="./gallery.html">갤러리</a><br>
+            <a href="#home">윤나영</a>
+
+            
+        </aside>
     </section>
     <footer>
         copyright@
