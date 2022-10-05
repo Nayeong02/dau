@@ -7,6 +7,27 @@
     <meta name="author" content="윤나영" />
     <mata name="keyword" content="빅데이터, django, python" />
     <title>Welcome to Nayeong Shopping Mall</title>
+    <style>
+        body{
+            width: 80vw;
+            background-color: lavender;
+        }
+        header, footer{
+            height: 100px;
+        }
+        nav {
+            height: 50px;
+        }
+        section{
+            display: flex;
+        }
+        .content{
+            flex: 4;
+        }
+        aside{
+            flex: 1;
+        }
+    </style>
 </head>
 <body>
 
@@ -27,6 +48,7 @@
     </ul> 
     </nav>
     <section>
+        <div class="content">
         <article>
             <div class="photo">  <!--. : class, # : id-->
                 <img src="./images/bigdata.jpg" alt="bigdata 이미지">
@@ -73,18 +95,22 @@
                 <iframe src="./gallery.html" width="60%" height="300" frameborder="0"></iframe>
             </div>
         </article>
+        </div>
         <aside>
             <div class="login">
-                <form action="#" method="get">
-                    <input type="text" name="id" id=""><br>
+                <form action="#" method="post">
+                    회원 ID : <input type="text" name="id" id=""><br>
+                    비밀번호 : <input type="password" name="pw" id=""> <br>
                     <input type="submit" value="제출">
+                    <input type="button" value="회원가입">
                 </form>
             </div>
-            <div class="bookmark"></div>
+            <div class="bookmark">
             <a href="http://mis.donga.ac.kr" target="_blank"> 경영정보학과</a><br>
             <a href="./gallery.html">갤러리</a><br>
             <a href="#home">윤나영</a>
-
+            </div>
+            
             
         </aside>
     </section>
